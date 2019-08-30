@@ -1,4 +1,3 @@
-import './example/interface'
-const num: number = 123
+import './example/function'
 
 document.body.style.background = '#e0e0e0'
