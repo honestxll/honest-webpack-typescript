@@ -14,6 +14,10 @@ module.exports = {
       test: /\.tsx?$/,
       use: 'ts-loader',
       exclude: /node_modules/
+    }, {
+      test: /\.js$/,
+      exclude: /node_modules/,
+      loader: "babel-loader"
     }]
   },
   devtool: process.env.NODE_ENV === 'production' ? false : 'inline-source-map',
